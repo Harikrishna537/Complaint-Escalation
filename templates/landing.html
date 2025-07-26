@@ -1,0 +1,181 @@
+{% extends "base.html" %}
+
+{% block content %}
+<div class="min-h-screen">
+    <!-- Hero Section -->
+    <section class="relative overflow-hidden gradient-bg">
+        <div class="absolute inset-0">
+            <div class="absolute inset-0 bg-black opacity-40"></div>
+            <div class="absolute inset-0" style="background-image: url('data:image/svg+xml,%3Csvg width="60" height="60" viewBox="0 0 60 60" xmlns="http://www.w3.org/2000/svg"%3E%3Cg fill="none" fill-rule="evenodd"%3E%3Cg fill="%239C92AC" fill-opacity="0.1"%3E%3Ccircle cx="30" cy="30" r="2"/%3E%3C/g%3E%3C/g%3E%3C/svg%3E')"></div>
+        </div>
+        
+        <div class="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-24">
+            <div class="text-center">
+                <h1 class="text-5xl md:text-7xl font-bold text-white mb-6 animate-fade-in">
+                    <i class="fas fa-comments text-yellow-400 mr-4"></i>
+                    ComplaintPortal
+                </h1>
+                <p class="text-xl md:text-2xl text-gray-200 mb-8 max-w-3xl mx-auto animate-fade-in" style="animation-delay: 0.2s">
+                    Your Voice, Our Priority. Streamline complaint management with our advanced tracking system.
+                </p>
+                <div class="flex flex-col sm:flex-row gap-4 justify-center animate-fade-in" style="animation-delay: 0.4s">
+                    <a href="{{ url_for('register') }}" class="inline-flex items-center px-8 py-4 border border-transparent text-lg font-medium rounded-xl text-primary-700 bg-white hover:bg-gray-50 transform hover:scale-105 transition-all duration-300 shadow-lg">
+                        <i class="fas fa-user-plus mr-2"></i>
+                        Get Started
+                    </a>
+                    <a href="{{ url_for('login') }}" class="inline-flex items-center px-8 py-4 border-2 border-white text-lg font-medium rounded-xl text-white hover:bg-white hover:text-primary-700 transform hover:scale-105 transition-all duration-300">
+                        <i class="fas fa-sign-in-alt mr-2"></i>
+                        Sign In
+                    </a>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Floating Elements -->
+        <div class="absolute top-20 left-10 w-20 h-20 bg-white bg-opacity-10 rounded-full animate-pulse"></div>
+        <div class="absolute top-40 right-20 w-16 h-16 bg-yellow-400 bg-opacity-20 rounded-full animate-bounce"></div>
+        <div class="absolute bottom-20 left-20 w-12 h-12 bg-blue-400 bg-opacity-20 rounded-full animate-ping"></div>
+    </section>
+
+    <!-- Features Section -->
+    <section class="py-20 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-4xl font-bold text-gray-900 mb-4">Why Choose ComplaintPortal?</h2>
+                <p class="text-xl text-gray-600 max-w-2xl mx-auto">
+                    Experience seamless complaint management with our cutting-edge features designed for efficiency and transparency.
+                </p>
+            </div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <div class="card-hover bg-white p-8 rounded-2xl shadow-lg border border-gray-100">
+                    <div class="w-16 h-16 bg-primary-100 rounded-xl flex items-center justify-center mb-6">
+                        <i class="fas fa-bolt text-2xl text-primary-600"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold text-gray-900 mb-4">Lightning Fast</h3>
+                    <p class="text-gray-600">Submit and track complaints in seconds. Our optimized system ensures quick response times and real-time updates.</p>
+                </div>
+                
+                <div class="card-hover bg-white p-8 rounded-2xl shadow-lg border border-gray-100">
+                    <div class="w-16 h-16 bg-green-100 rounded-xl flex items-center justify-center mb-6">
+                        <i class="fas fa-shield-alt text-2xl text-green-600"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold text-gray-900 mb-4">Secure & Private</h3>
+                    <p class="text-gray-600">Your data is protected with enterprise-grade security. Complete privacy and confidentiality guaranteed.</p>
+                </div>
+                
+                <div class="card-hover bg-white p-8 rounded-2xl shadow-lg border border-gray-100">
+                    <div class="w-16 h-16 bg-purple-100 rounded-xl flex items-center justify-center mb-6">
+                        <i class="fas fa-chart-line text-2xl text-purple-600"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold text-gray-900 mb-4">Real-time Tracking</h3>
+                    <p class="text-gray-600">Monitor complaint progress with live updates. Stay informed at every step of the resolution process.</p>
+                </div>
+                
+                <div class="card-hover bg-white p-8 rounded-2xl shadow-lg border border-gray-100">
+                    <div class="w-16 h-16 bg-yellow-100 rounded-xl flex items-center justify-center mb-6">
+                        <i class="fas fa-comments text-2xl text-yellow-600"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold text-gray-900 mb-4">Interactive Communication</h3>
+                    <p class="text-gray-600">Engage in real-time conversations with support team. Add comments and receive instant feedback.</p>
+                </div>
+                
+                <div class="card-hover bg-white p-8 rounded-2xl shadow-lg border border-gray-100">
+                    <div class="w-16 h-16 bg-red-100 rounded-xl flex items-center justify-center mb-6">
+                        <i class="fas fa-tags text-2xl text-red-600"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold text-gray-900 mb-4">Smart Categorization</h3>
+                    <p class="text-gray-600">Intelligent complaint categorization ensures your issues reach the right department for faster resolution.</p>
+                </div>
+                
+                <div class="card-hover bg-white p-8 rounded-2xl shadow-lg border border-gray-100">
+                    <div class="w-16 h-16 bg-indigo-100 rounded-xl flex items-center justify-center mb-6">
+                        <i class="fas fa-mobile-alt text-2xl text-indigo-600"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold text-gray-900 mb-4">Mobile Responsive</h3>
+                    <p class="text-gray-600">Access your complaints from anywhere, anytime. Fully responsive design for all devices and screen sizes.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Stats Section -->
+    <section class="py-20 bg-gray-900">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-4xl font-bold text-white mb-4">Trusted by Thousands</h2>
+                <p class="text-xl text-gray-300">Join our growing community of satisfied users</p>
+            </div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
+                <div class="text-center">
+                    <div class="text-4xl font-bold text-primary-400 mb-2">50K+</div>
+                    <div class="text-gray-300">Complaints Resolved</div>
+                </div>
+                <div class="text-center">
+                    <div class="text-4xl font-bold text-green-400 mb-2">98%</div>
+                    <div class="text-gray-300">Satisfaction Rate</div>
+                </div>
+                <div class="text-center">
+                    <div class="text-4xl font-bold text-yellow-400 mb-2">24/7</div>
+                    <div class="text-gray-300">Support Available</div>
+                </div>
+                <div class="text-center">
+                    <div class="text-4xl font-bold text-purple-400 mb-2">2min</div>
+                    <div class="text-gray-300">Average Response</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="py-20 bg-primary-600">
+        <div class="max-w-4xl mx-auto text-center px-4 sm:px-6 lg:px-8">
+            <h2 class="text-4xl font-bold text-white mb-6">Ready to Get Started?</h2>
+            <p class="text-xl text-primary-100 mb-8">
+                Join thousands of users who trust ComplaintPortal for their complaint management needs.
+            </p>
+            <div class="flex flex-col sm:flex-row gap-4 justify-center">
+                <a href="{{ url_for('register') }}" class="inline-flex items-center px-8 py-4 border border-transparent text-lg font-medium rounded-xl text-primary-600 bg-white hover:bg-gray-50 transform hover:scale-105 transition-all duration-300 shadow-lg">
+                    <i class="fas fa-rocket mr-2"></i>
+                    Start Your Journey
+                </a>
+                <a href="{{ url_for('login') }}" class="inline-flex items-center px-8 py-4 border-2 border-white text-lg font-medium rounded-xl text-white hover:bg-white hover:text-primary-600 transform hover:scale-105 transition-all duration-300">
+                    <i class="fas fa-sign-in-alt mr-2"></i>
+                    Already Have Account?
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-white py-12">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center">
+                <h3 class="text-2xl font-bold mb-4">
+                    <i class="fas fa-comments text-primary-400 mr-2"></i>
+                    ComplaintPortal
+                </h3>
+                <p class="text-gray-400 mb-6">Streamlining complaint management for a better tomorrow.</p>
+                <div class="flex justify-center space-x-6">
+                    <a href="#" class="text-gray-400 hover:text-primary-400 transition-colors">
+                        <i class="fab fa-twitter text-xl"></i>
+                    </a>
+                    <a href="#" class="text-gray-400 hover:text-primary-400 transition-colors">
+                        <i class="fab fa-facebook text-xl"></i>
+                    </a>
+                    <a href="#" class="text-gray-400 hover:text-primary-400 transition-colors">
+                        <i class="fab fa-linkedin text-xl"></i>
+                    </a>
+                    <a href="#" class="text-gray-400 hover:text-primary-400 transition-colors">
+                        <i class="fab fa-instagram text-xl"></i>
+                    </a>
+                </div>
+                <p class="text-gray-500 text-sm mt-8">
+                    © 2025 ComplaintPortal. All rights reserved.
+                </p>
+            </div>
+        </div>
+    </footer>
+</div>
+{% endblock %}
